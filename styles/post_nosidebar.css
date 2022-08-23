@@ -287,6 +287,11 @@ section
 	letter-spacing: 0.075em;
 }
 
+.logo-style
+{
+	font-family: 'DM Serif Display', serif;
+}
+
 /*********************************
 3.2 Main Navigation
 *********************************/

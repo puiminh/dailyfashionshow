@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Avision</title>
+<title>Daily Fashion</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Demo project">
@@ -14,6 +14,7 @@
 <link rel="stylesheet" type="text/css" href="plugins/jquery.mb.YTPlayer-3.1.12/jquery.mb.YTPlayer.css">
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/custom.css">
 </head>
 <body>
 
@@ -26,24 +27,19 @@
 			<div class="row">
 				<div class="col">
 					<div class="header_content d-flex flex-row align-items-center justify-content-start">
-						<div class="logo"><a href="#">avision</a></div>
+						<div class="logo"><a class="logo-style" href="#">daily fashion</a></div>
 						<nav class="main_nav">
 							<ul>
-								<li class="active"><a href="index.html">Home</a></li>
-								<li><a href="#">Fashion</a></li>
-								<li><a href="#">Gadgets</a></li>
-								<li><a href="#">Lifestyle</a></li>
-								<li><a href="#">Video</a></li>
-								<li><a href="contact.html">Contact</a></li>
+								<li class="active"><a href="index.html">Trang chủ</a></li>
+								<li><a href="#">Tin tức</a></li>
+								<li><a href="#">Mẫu</a></li>
+								<li><a href="#">Làm đẹp</a></li>
+								<li><a href="contact.html">Liên hệ</a></li>
 							</ul>
 						</nav>
 						<div class="search_container ml-auto">
-							<div class="weather">
-								<div class="temperature">+10°</div>
-								<img class="weather_icon" src="images/cloud.png" alt="">
-							</div>
 							<form action="#">
-								<input type="search" class="header_search_input" required="required" placeholder="Type to Search...">
+								<input type="search" class="header_search_input" required="required" placeholder="Tìm kiếm gì đó...">
 								<img class="header_search_icon" src="images/search.png" alt="">
 							</form>
 							
@@ -61,7 +57,7 @@
 
 	<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
 		<div class="menu_close_container"><div class="menu_close"><div></div><div></div></div></div>
-		<div class="logo menu_mm"><a href="#">Avision</a></div>
+		<div class="logo menu_mm"><a href="#">Daily Fashion</a></div>
 		<div class="search">
 			<form action="#">
 				<input type="search" class="header_search_input menu_mm" required="required" placeholder="Type to Search...">
@@ -70,12 +66,11 @@
 		</div>
 		<nav class="menu_nav">
 			<ul class="menu_mm">
-				<li class="menu_mm"><a href="index.html">home</a></li>
-				<li class="menu_mm"><a href="#">Fashion</a></li>
-				<li class="menu_mm"><a href="#">Gadgets</a></li>
-				<li class="menu_mm"><a href="#">Lifestyle</a></li>
-				<li class="menu_mm"><a href="#">Video</a></li>
-				<li class="menu_mm"><a href="contact.html">Contact</a></li>
+				<li class="menu_mm"><a href="index.html">Daily Fashion</a></li>
+				<li class="menu_mm"><a href="#">Trang chủ</a></li>
+				<li class="menu_mm"><a href="#">Tin tức</a></li>
+				<li class="menu_mm"><a href="#">Mẫu</a></li>
+				<li class="menu_mm"><a href="contact.html">Liên hệ</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -88,21 +83,21 @@
 
 		<div class="home_slider_container">
 			<div class="owl-carousel owl-theme home_slider">
-				
+
 				<!-- Slider Item -->
 				<div class="owl-item">
-					<div class="home_slider_background" style="background-image:url(images/home_slider.jpg)"></div>
-					<div class="home_slider_content_container">
+					<div class="home_slider_background blur" style="background-image:url('https://style-republik.com/wp-content/uploads/2021/10/1A7D0F0E-5D16-4F98-9774-41774D527B03.jpg');   background-position: center; /* Center the image */ background-repeat: no-repeat; /* Do not repeat the image */ background-size: cover; /* Resize the background image to cover the entire container */"></div>
+					<div class="home_slider_content_container home-slider-container">
 						<div class="container">
 							<div class="row">
 								<div class="col">
 									<div class="home_slider_content">
-										<div class="home_slider_item_category trans_200"><a href="category.html" class="trans_200">sport</a></div>
-										<div class="home_slider_item_title">
-											<a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a>
+										<div class="home_slider_item_category trans_200"><a href="category.html" class="trans_200">tin tức</a></div>
+										<div class="home_slider_item_title z-index-999">
+											<a href="post.html">Y2K - Phong cách thời trang làm mưa làm gió</a>
 										</div>
 										<div class="home_slider_item_link">
-											<a href="post.html" class="trans_200">Continue Reading
+											<a href="post.html" class="trans_200">Xem Thêm
 												<svg version="1.1" id="link_arrow_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 													 width="19px" height="13px" viewBox="0 0 19 13" enable-background="new 0 0 19 13" xml:space="preserve">
 													<polygon fill="#FFFFFF" points="12.475,0 11.061,0 17.081,6.021 0,6.021 0,7.021 17.038,7.021 11.06,13 12.474,13 18.974,6.5 "/>
@@ -116,61 +111,51 @@
 					</div>
 
 					<!-- Similar Posts -->
-					<div class="similar_posts_container">
+				</div>
+
+				<!-- Slider Item -->
+				<div class="owl-item">
+					<div class="home_slider_background" style="background-image:url('https://media.2dep.vn/upload/luanhuynh/2022/08/08/pink-venom-la-ca-khuc-tro-lai-cua-blackpink-yg-tiet-lo-nhung-thong-tin-dau-tien-1-1659948103.jpg');"></div>
+					<div class="home_slider_content_container home-slider-container">
 						<div class="container">
-							<div class="row d-flex flex-row align-items-end">
-
-								<!-- Similar Post -->
-								<div class="col-lg-3 col-md-6 similar_post_col">
-									<div class="similar_post trans_200">
-										<a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a>
+							<div class="row">
+								<div class="col">
+									<div class="home_slider_content">
+										<div class="home_slider_item_category trans_200"><a href="category.html" class="trans_200">tin tức</a></div>
+										<div class="home_slider_item_title banner-text">
+											<a href="post.html">Jisoo, Rosé (BLACKPINK) diện đồ thương hiệu Việt trong "Pink Venom", cắt váy thành áo cực ngầu</a>
+										</div>
+										<div class="home_slider_item_link">
+											<a href="post.html" class="trans_200">Xem Thêm
+												<svg version="1.1" id="link_arrow_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+													 width="19px" height="13px" viewBox="0 0 19 13" enable-background="new 0 0 19 13" xml:space="preserve">
+													<polygon fill="#FFFFFF" points="12.475,0 11.061,0 17.081,6.021 0,6.021 0,7.021 17.038,7.021 11.06,13 12.474,13 18.974,6.5 "/>
+												</svg>
+											</a>
+										</div>
 									</div>
-								</div>
-
-								<!-- Similar Post -->
-								<div class="col-lg-3 col-md-6 similar_post_col">
-									<div class="similar_post trans_200">
-										<a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a>
-									</div>
-								</div>
-
-								<!-- Similar Post -->
-								<div class="col-lg-3 col-md-6 similar_post_col">
-									<div class="similar_post trans_200">
-										<a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a>
-									</div>
-								</div>
-
-							</div>
-						</div>
-						
-						<div class="home_slider_next_container">
-							<div class="home_slider_next" style="background-image:url(images/home_slider_next.jpg)">
-								<div class="home_slider_next_background trans_400"></div>
-								<div class="home_slider_next_content trans_400">
-									<div class="home_slider_next_title">next</div>
-									<div class="home_slider_next_link">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</div>
 								</div>
 							</div>
 						</div>
-
 					</div>
+
+					<!-- Similar Posts -->
 				</div>
 
 				<!-- Slider Item -->
 				<div class="owl-item">
 					<div class="home_slider_background" style="background-image:url(images/home_slider.jpg)"></div>
-					<div class="home_slider_content_container">
+					<div class="home_slider_content_container home-slider-container">
 						<div class="container">
 							<div class="row">
 								<div class="col">
 									<div class="home_slider_content">
-										<div class="home_slider_item_category trans_200"><a href="category.html" class="trans_200">sport</a></div>
+										<div class="home_slider_item_category trans_200"><a href="category.html" class="trans_200">tin tức</a></div>
 										<div class="home_slider_item_title">
 											<a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a>
 										</div>
 										<div class="home_slider_item_link">
-											<a href="post.html" class="trans_200">Continue Reading
+											<a href="post.html" class="trans_200">Xem Thêm
 												<svg version="1.1" id="link_arrow_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 													 width="19px" height="13px" viewBox="0 0 19 13" enable-background="new 0 0 19 13" xml:space="preserve">
 													<polygon fill="#FFFFFF" points="12.475,0 11.061,0 17.081,6.021 0,6.021 0,7.021 17.038,7.021 11.06,13 12.474,13 18.974,6.5 "/>
@@ -184,137 +169,29 @@
 					</div>
 
 					<!-- Similar Posts -->
-					<div class="similar_posts_container">
-						<div class="container">
-							<div class="row d-flex flex-row align-items-end">
-
-								<!-- Similar Post -->
-								<div class="col-lg-3 col-md-6 similar_post_col">
-									<div class="similar_post trans_200">
-										<a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a>
-									</div>
-								</div>
-
-								<!-- Similar Post -->
-								<div class="col-lg-3 col-md-6 similar_post_col">
-									<div class="similar_post trans_200">
-										<a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a>
-									</div>
-								</div>
-
-								<!-- Similar Post -->
-								<div class="col-lg-3 col-md-6 similar_post_col">
-									<div class="similar_post trans_200">
-										<a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a>
-									</div>
-								</div>
-
-							</div>
-						</div>
-						
-						<div class="home_slider_next_container">
-							<div class="home_slider_next" style="background-image:url(images/home_slider_next.jpg)">
-								<div class="home_slider_next_background trans_400"></div>
-								<div class="home_slider_next_content trans_400">
-									<div class="home_slider_next_title">next</div>
-									<div class="home_slider_next_link">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-
-				<!-- Slider Item -->
-				<div class="owl-item">
-					<div class="home_slider_background" style="background-image:url(images/home_slider.jpg)"></div>
-					<div class="home_slider_content_container">
-						<div class="container">
-							<div class="row">
-								<div class="col">
-									<div class="home_slider_content">
-										<div class="home_slider_item_category trans_200"><a href="category.html" class="trans_200">sport</a></div>
-										<div class="home_slider_item_title">
-											<a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a>
-										</div>
-										<div class="home_slider_item_link">
-											<a href="post.html" class="trans_200">Continue Reading
-												<svg version="1.1" id="link_arrow_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-													 width="19px" height="13px" viewBox="0 0 19 13" enable-background="new 0 0 19 13" xml:space="preserve">
-													<polygon fill="#FFFFFF" points="12.475,0 11.061,0 17.081,6.021 0,6.021 0,7.021 17.038,7.021 11.06,13 12.474,13 18.974,6.5 "/>
-												</svg>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Similar Posts -->
-					<div class="similar_posts_container">
-						<div class="container">
-							<div class="row d-flex flex-row align-items-end">
-
-								<!-- Similar Post -->
-								<div class="col-lg-3 col-md-6 similar_post_col">
-									<div class="similar_post trans_200">
-										<a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a>
-									</div>
-								</div>
-
-								<!-- Similar Post -->
-								<div class="col-lg-3 col-md-6 similar_post_col">
-									<div class="similar_post trans_200">
-										<a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a>
-									</div>
-								</div>
-
-								<!-- Similar Post -->
-								<div class="col-lg-3 col-md-6 similar_post_col">
-									<div class="similar_post trans_200">
-										<a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a>
-									</div>
-								</div>
-
-							</div>
-						</div>
-						
-						<div class="home_slider_next_container">
-							<div class="home_slider_next" style="background-image:url(images/home_slider_next.jpg)">
-								<div class="home_slider_next_background trans_400"></div>
-								<div class="home_slider_next_content trans_400">
-									<div class="home_slider_next_title">next</div>
-									<div class="home_slider_next_link">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
 				</div>
 
 			</div>
 
-			<div class="custom_nav_container home_slider_nav_container">
-				<div class="custom_prev custom_prev_home_slider">
-					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-						 width="7px" height="12px" viewBox="0 0 7 12" enable-background="new 0 0 7 12" xml:space="preserve">
-						<polyline fill="#FFFFFF" points="0,5.61 5.609,0 7,0 7,1.438 2.438,6 7,10.563 7,12 5.609,12 -0.002,6.39 "/>
-					</svg>
-				</div>
-		        <ul id="custom_dots" class="custom_dots custom_dots_home_slider">
-					<li class="custom_dot custom_dot_home_slider active"><span></span></li>
-					<li class="custom_dot custom_dot_home_slider"><span></span></li>
-					<li class="custom_dot custom_dot_home_slider"><span></span></li>
-				</ul>
-				<div class="custom_next custom_next_home_slider">
-					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-						 width="7px" height="12px" viewBox="0 0 7 12" enable-background="new 0 0 7 12" xml:space="preserve">
-						<polyline fill="#FFFFFF" points="6.998,6.39 1.389,12 -0.002,12 -0.002,10.562 4.561,6 -0.002,1.438 -0.002,0 1.389,0 7,5.61 "/>
-					</svg>
-				</div>
+		</div>
+		<div class="custom_nav_container home_slider_nav_container custom-nav-container">
+			<div class="custom_prev custom_prev_home_slider">
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 width="7px" height="12px" viewBox="0 0 7 12" enable-background="new 0 0 7 12" xml:space="preserve">
+					<polyline fill="#FFFFFF" points="0,5.61 5.609,0 7,0 7,1.438 2.438,6 7,10.563 7,12 5.609,12 -0.002,6.39 "/>
+				</svg>
 			</div>
-
+			<ul id="custom_dots" class="custom_dots custom_dots_home_slider">
+				<li class="custom_dot custom_dot_home_slider active"><span></span></li>
+				<li class="custom_dot custom_dot_home_slider"><span></span></li>
+				<li class="custom_dot custom_dot_home_slider"><span></span></li>
+			</ul>
+			<div class="custom_next custom_next_home_slider">
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 width="7px" height="12px" viewBox="0 0 7 12" enable-background="new 0 0 7 12" xml:space="preserve">
+					<polyline fill="#FFFFFF" points="6.998,6.39 1.389,12 -0.002,12 -0.002,10.562 4.561,6 -0.002,1.438 -0.002,0 1.389,0 7,5.61 "/>
+				</svg>
+			</div>
 		</div>
 	</div>
 	
@@ -333,28 +210,14 @@
 
 						<div class="blog_section">
 							<div class="section_panel d-flex flex-row align-items-center justify-content-start">
-								<div class="section_title">Don't Miss</div>
-								<div class="section_tags ml-auto">
+								<div class="section_title">Tin tức</div>
+								<div class="section_tags ml-auto section-tags">
 									<ul>
 										<li class="active"><a href="category.html">all</a></li>
-										<li><a href="category.html">style hunter</a></li>
-										<li><a href="category.html">vogue</a></li>
-										<li><a href="category.html">health & fitness</a></li>
-										<li><a href="category.html">travel</a></li>
-									</ul>
-								</div>
-								<div class="section_panel_more">
-									<ul>
-										<li>more
-											<ul>
-												<li><a href="category.html">new look 2018</a></li>
-												<li><a href="category.html">street fashion</a></li>
-												<li><a href="category.html">business</a></li>
-												<li><a href="category.html">recipes</a></li>
-												<li><a href="category.html">sport</a></li>
-												<li><a href="category.html">celebrities</a></li>
-											</ul>
-										</li>
+										<li><a href="category.html">sự kiện</a></li>
+										<li><a href="category.html">xu hướng</a></li>
+										<!-- <li><a href="category.html">health & fitness</a></li> -->
+										<li><a href="category.html">khác</a></li>
 									</ul>
 								</div>
 							</div>
@@ -363,46 +226,50 @@
 
 									<!-- Largest Card With Image -->
 									<div class="card card_largest_with_image grid-item">
-										<img class="card-img-top" src="images/post_1.jpg" alt="https://unsplash.com/@cjtagupa">
+										<img class="card-img-top" src="https://kenh14cdn.com/203336854389633024/2022/8/19/photo-1-1660908846878896059093.jpg" alt="https://unsplash.com/@cjtagupa">
 										<div class="card-body">
-											<div class="card-title"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<p class="card-text">Pick the yellow peach that looks like a sunset with its red, orange, and pink coat skin, peel it off with your teeth. Sink them into unripened...</p>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
+											<div class="card-title"><a href="post.html">Jisoo, Rosé (BLACKPINK) diện đồ thương hiệu Việt trong "Pink Venom", cắt váy thành áo cực ngầu</a></div>
+											<p class="card-text">Thương hiệu Việt - Fancì Club tiếp tục có tên trong loạt outfit của BLACKPINK. Jisoo và Rosé đã diện 2 mẫu váy đến từ nhà mốt này trong MV "Pink Venom", nhưng đã được stylist chỉnh sửa khéo léo để tránh hớ hênh....</p>
+											<small class="post_meta"><a href="#">Katy Liu</a><span>May 29, 2022 at 9:48 am</span></small>
 										</div>
 									</div>
 
 									<!-- Small Card Without Image -->
 									<div class="card card_default card_small_no_image grid-item">
 										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
+											<div class="card-title card-title-small"><a href="post.html">BST SAINT LAURENT XU N HÈ NAM 2023: DIỆN MẠO MỚI CỦA SỰ NAM TÍNH DƯỚI GÓC NHÌN CỦA ANTHONY VACCARELLO
+											</a></div>
+											<small class="post_meta"><a href="#">Jame Pham</a><span>May 26, 2022 at 6:23 am</span></small>
 										</div>
 									</div>
 
 									<!-- Small Card With Background -->
 									<div class="card card_default card_small_with_background grid-item">
-										<div class="card_background" style="background-image:url(images/post_4.jpg)"></div>
+										<div class="card_background" style="background-image:url('https://file.hstatic.net/1000184601/file/tips-9-cach-len-do-cuc-chat-cung-ao-thu-dong-dai-tay-nu-3_99ed6ef7bcb14f50ac817d232b431023_grande.jpg')"></div>
 										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
+											<div class="card-title card-title-small"><a href="post.html">6 XU HƯỚNG THỜI TRANG NỔI BẬT NHẤT MÙA THU ĐÔNG 2022
+											</a></div>
+											<small class="post_meta"><a href="#">Katy Liu</a><span>Aug 12, 2022 at 10:20 am</span></small>
 										</div>
 									</div>
 
 									<!-- Small Card With Image -->
 									<div class="card card_small_with_image grid-item">
-										<img class="card-img-top" src="images/post_2.jpg" alt="https://unsplash.com/@jakobowens1">
+										<img class="card-img-top" src="https://znews-photo.zingcdn.me/w660/Uploaded/neg_yslewlx/2018_09_22/dfdf_2.jpg" alt="https://unsplash.com/@jakobowens1">
 										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
+											<div class="card-title card-title-small"><a href="post.html">Học các mỹ nhân Hollywood lên đồ đơn giản
+Nhưng vẫn sành điệu và chất chơi 
+</a></div>
+											<small class="post_meta"><a href="#">Katy Liu</a><span>Aug 12, 2022 at 10:20 am</span></small>
 										</div>
 									</div>
 
 									<!-- Small Card With Image -->
 									<div class="card card_small_with_image grid-item">
-										<img class="card-img-top" src="images/post_3.jpg" alt="https://unsplash.com/@jannerboy62">
+										<img class="card-img-top" src="http://cdn.tgdd.vn/Files/2021/10/21/1392499/meo-chon-va-phoi-do-cong-so-cho-nang-nam-lun-hack-dang-cuc-dinh-202110211416313018.jpg" alt="https://unsplash.com/@jannerboy62">
 										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
+											<div class="card-title card-title-small"><a href="post.html">5 set đồ cơ bản dành cho chốn công sở </a></div>
+											<small class="post_meta"><a href="#">Katy Liu</a><span>Aug 12, 2022 at 10:20 am</span></small>
 										</div>
 									</div>
 
@@ -410,7 +277,7 @@
 
 									<div class="card card_default card_default_no_image grid-item">
 										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a></div>
+											<div class="card-title card-title-small"><a href="post.html">Hoa hậu Thùy Tiên choáng ngợp trước loạt tác phẩm trang phục dân tộc của Miss Grand Vietnam 2022</a></div>
 										</div>
 									</div>
 
@@ -418,7 +285,7 @@
 
 									<div class="card card_default card_default_no_image grid-item">
 										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a></div>
+											<div class="card-title card-title-small"><a href="post.html">5 kiểu giày bệt giúp nàng thấp bé "ăn gian" 5 phân chiều cao, và còn rất trẻ trung thanh lịch</a></div>
 										</div>
 									</div>
 
@@ -426,7 +293,7 @@
 
 									<div class="card card_default card_default_no_image grid-item">
 										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a></div>
+											<div class="card-title card-title-small"><a href="post.html">Ngành hàng xa xỉ chật vật vì người trẻ thất nghiệp</a></div>
 										</div>
 									</div>
 
@@ -438,28 +305,14 @@
 
 						<div class="blog_section">
 							<div class="section_panel d-flex flex-row align-items-center justify-content-start">
-								<div class="section_title">What's Trending</div>
-								<div class="section_tags ml-auto">
+								<div class="section_title">Mẫu</div>
+								<div class="section_tags ml-auto section-tags">
 									<ul>
 										<li class="active"><a href="category.html">all</a></li>
-										<li><a href="category.html">style hunter</a></li>
-										<li><a href="category.html">vogue</a></li>
-										<li><a href="category.html">health & fitness</a></li>
-										<li><a href="category.html">travel</a></li>
-									</ul>
-								</div>
-								<div class="section_panel_more">
-									<ul>
-										<li>more
-											<ul>
-												<li><a href="category.html">new look 2018</a></li>
-												<li><a href="category.html">street fashion</a></li>
-												<li><a href="category.html">business</a></li>
-												<li><a href="category.html">recipes</a></li>
-												<li><a href="category.html">sport</a></li>
-												<li><a href="category.html">celebrities</a></li>
-											</ul>
-										</li>
+										<li><a href="category.html">mẫu nam</a></li>
+										<li><a href="category.html">mẫu nữ</a></li>
+										<li><a href="category.html">mẫu teen</a></li>
+										<li><a href="category.html">khác</a></li>
 									</ul>
 								</div>
 							</div>
@@ -468,29 +321,29 @@
 									
 									<!-- Large Card With Background -->
 									<div class="card card_large_with_background grid-item">
-										<div class="card_background" style="background-image:url(images/post_8.jpg)"></div>
+										<div class="card_background" style="background-image:url('https://kenh14cdn.com/thumb_w/620/203336854389633024/2022/8/22/photo-1-16611388982491969644851.jpeg')"></div>
 										<div class="card-body">
-											<div class="card-title"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
+											<div class="card-title"><a href="post.html">Nữ người mẫu nóng bỏng với loạt thành tích ''khủng'' gây chú ý tại Miss Grand Vietnam 2022</a></div>
+											<small class="post_meta"><a href="#">Sam Kata</a><span>Aug 12, 2022 at 10:20 am</span></small>
 										</div>
 									</div>
 									
 									<!-- Large Card With Image -->
 									<div class="card grid-item card_large_with_image">
-										<img class="card-img-top" src="images/post_9.jpg" alt="">
+										<img class="card-img-top" src="https://kenh14cdn.com/thumb_w/620/203336854389633024/2022/8/15/photo-9-16605498126251301956278.jpg" alt="">
 										<div class="card-body">
-											<div class="card-title"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<p class="card-text">Pick the yellow peach that looks like a sunset with its red, orange, and pink coat skin, peel it off with your teeth. Sink them into unripened...</p>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
+											<div class="card-title"><a href="post.html"></a>Mục sở thị lớp học uốn nắn "cột sống" của Gen Z do người mẫu Tuyết Lan giảng dạy</div>
+											<p class="card-text">Tham gia một lớp học người mẫu có gì thú vị không nhỉ, cùng chúng tôi tìm hiểu thử nhé!....</p>
+											<small class="post_meta"><a href="#">Mat Job</a><span>Aug 12, 2022 at 10:20 am</span></small>
 										</div>
 									</div>
 
 									<!-- Default Card With Image -->
 									<div class="card card_small_with_image grid-item">
-										<img class="card-img-top" src="images/post_5.jpg" alt="">
+										<img class="card-img-top" src="https://kenh14cdn.com/thumb_w/620/203336854389633024/2022/8/9/photo-6-1660017954494833200146.jpg" alt="">
 										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
+											<div class="card-title card-title-small"><a href="post.html">Người mẫu Fung La ở tuổi 29: Vượt qua giới hạn bản thân, tự chữa lành nỗi đau</a></div>
+											<small class="post_meta"><a href="#">Katy Liu</a><span>Aug 12, 2022 at 10:20 am</span></small>
 										</div>
 									</div>
 									
@@ -499,30 +352,21 @@
 									<div class="card card_default card_default_with_background grid-item">
 										<div class="card_background" style="background-image:url(images/post_6.jpg)"></div>
 										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a></div>
+											<div class="card-title card-title-small"><a href="post.html">Nhan sắc ngọt ngào như búp bê của người mẫu vừa đăng quang Hoa hậu Philippines 2022</a></div>
 										</div>
 									</div>
 
 									<!-- Default Card No Image -->
 									<div class="card card_default card_default_no_image grid-item">
 										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a></div>
+											<div class="card-title card-title-small"><a href="post.html">5 minh tinh xứ Hàn xuất thân từ nghề người mẫu: Sở hữu ngoại hình đều thuộc hàng top của Kbiz</a></div>
 										</div>
 									</div>
 
 									<!-- Default Card No Image -->
 									<div class="card card_default card_default_no_image grid-item">
 										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a></div>
-										</div>
-									</div>
-
-									<!-- Default Card With Background -->
-
-									<div class="card card_default card_default_with_background grid-item">
-										<div class="card_background" style="background-image:url(images/post_7.jpg)"></div>
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a></div>
+											<div class="card-title card-title-small"><a href="post.html">Vẻ đẹp như thiên thần của người mẫu tóc vàng vừa đăng quang Hoa hậu Nga 2022</a></div>
 										</div>
 									</div>
 
@@ -531,107 +375,38 @@
 							</div>
 						</div>
 
-						<!-- Blog Section - Videos -->
-
-						<div class="blog_section">
-							<div class="section_panel d-flex flex-row align-items-center justify-content-start">
-								<div class="section_title">Most Popular Videos</div>
-							</div>
-							<div class="section_content">
-								<div class="row">
-									<div class="col">
-										<div class="videos">
-											<div class="player_container">
-												<div id="P1" class="player" 
-												     data-property="{videoURL:'2ScS5kwm7nI',containment:'self',startAt:0,mute:false,autoPlay:false,loop:false,opacity:1}">
-												</div>
-											</div>
-											<div class="playlist">
-												<div class="playlist_background"></div>
-
-												<!-- Video -->
-												<div class="video_container video_command active" onclick="jQuery('#P1').YTPChangeVideo({videoURL: '2ScS5kwm7nI', mute:false, addRaster:true})">
-													<div class="video d-flex flex-row align-items-center justify-content-start">
-														<div class="video_image"><div><img src="images/video_1.jpg" alt=""></div><img class="play_img" src="images/play.png" alt=""></div>
-														<div class="video_content">
-															<div class="video_title">How Did van Gogh’s Turbulent Mind</div>
-															<div class="video_info"><span>1.2M views</span><span>Sep 29</span></div>
-														</div>
-													</div>
-												</div>
-
-												<!-- Video -->
-												<div class="video_container video_command" onclick="jQuery('#P1').YTPChangeVideo({videoURL: 'BzMLA8YIgG0', mute:false, addRaster:true})">
-													<div class="video d-flex flex-row align-items-center justify-content-start">
-														<div class="video_image"><div><img src="images/video_2.jpg" alt=""></div><img class="play_img" src="images/play.png" alt=""></div>
-														<div class="video_content">
-															<div class="video_title">How Did van Gogh’s Turbulent Mind</div>
-															<div class="video_info"><span>1.2M views</span><span>Sep 29</span></div>
-														</div>
-													</div>
-												</div>
-
-												<!-- Video -->
-												<div class="video_container video_command" onclick="jQuery('#P1').YTPChangeVideo({videoURL: 'bpbcSdqvtUQ', mute:false, addRaster:true})">
-													<div class="video d-flex flex-row align-items-center justify-content-start">
-														<div class="video_image"><div><img src="images/video_3.jpg" alt=""></div><img class="play_img" src="images/play.png" alt=""></div>
-														<div class="video_content">
-															<div class="video_title">How Did van Gogh’s Turbulent Mind</div>
-															<div class="video_info"><span>1.2M views</span><span>Sep 29</span></div>
-														</div>
-													</div>
-												</div>
-
-												<!-- Video -->
-												<div class="video_container video_command" onclick="jQuery('#P1').YTPChangeVideo({videoURL: 'UjYemgbhJF0', mute:false, addRaster:true})">
-													<div class="video d-flex flex-row align-items-center justify-content-start">
-														<div class="video_image"><div><img src="images/video_4.jpg" alt=""></div><img class="play_img" src="images/play.png" alt=""></div>
-														<div class="video_content">
-															<div class="video_title">How Did van Gogh’s Turbulent Mind</div>
-															<div class="video_info"><span>1.2M views</span><span>Sep 29</span></div>
-														</div>
-													</div>
-												</div>
-
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
 						<!-- Blog Section - Latest -->
 
 						<div class="blog_section">
 							<div class="section_panel d-flex flex-row align-items-center justify-content-start">
-								<div class="section_title">Latest Articles</div>
+								<div class="section_title">Làm Đẹp</div>
 							</div>
 							<div class="section_content">
 								<div class="grid clearfix">
 									
 									<!-- Small Card With Image -->
 									<div class="card card_small_with_image grid-item">
-										<img class="card-img-top" src="images/post_10.jpg" alt="">
+										<img class="card-img-top" src="https://kenh14cdn.com/thumb_w/620/203336854389633024/2022/8/22/photo-2-16611772141741710068426.jpg" alt="">
 										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
+											<div class="card-title card-title-small"><a href="post.html">Chuyên gia chỉ ra 3 bước thiết yếu cần làm ngay để da đẹp và ngăn ngừa nám</a></div>
+											<small class="post_meta"><a href="#">Katy Liu</a><span>Aug 12, 2022 at 10:20 am</span></small>
 										</div>
 									</div>
 
 									<!-- Small Card Without Image -->
 									<div class="card card_default card_small_no_image grid-item">
 										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
+											<div class="card-title card-title-small"><a href="post.html">Muốn có diện mạo rạng ngời ngày tựu trường, bạn đã sở hữu bí quyết làm đẹp này chưa?</a></div>
+											<small class="post_meta"><a href="#">Katy Liu</a><span>Aug 12, 2022 at 10:20 am</span></small>
 										</div>
 									</div>
 
 									<!-- Small Card With Image -->
 									<div class="card card_small_with_image grid-item">
-										<img class="card-img-top" src="images/post_15.jpg" alt="">
+										<img class="card-img-top" src="https://kenh14cdn.com/thumb_w/800/pr/2022/photo1661160467225-16611604675902013256365-63796784452531.jpg" alt="">
 										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
+											<div class="card-title card-title-small"><a href="post.html">Triển lãm ngành làm đẹp Vietbeauty x Cosmobeaute 2022 sắp diễn ra</a></div>
+											<small class="post_meta"><a href="#">Katy Liu</a><span>Aug 12, 2022 at 10:20 am</span></small>
 										</div>
 									</div>
 
@@ -639,67 +414,53 @@
 									<div class="card card_small_with_image grid-item">
 										<img class="card-img-top" src="images/post_13.jpg" alt="https://unsplash.com/@jakobowens1">
 										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
+											<div class="card-title card-title-small"><a href="post.html">Bộ gội xả trứng cá tầm Magic Skin - bí quyết làm đẹp của Hoa hậu Việt</a></div>
+											<small class="post_meta"><a href="#">Katy Liu</a><span>Aug 12, 2022 at 10:20 am</span></small>
 										</div>
 									</div>
 
 									<!-- Small Card With Background -->
 									<div class="card card_default card_small_with_background grid-item">
-										<div class="card_background" style="background-image:url(images/post_11.jpg)"></div>
+										<div class="card_background" style="background-image:url('https://kenh14cdn.com/thumb_w/620/203336854389633024/2022/8/21/photo-1-1661042341422923757531.png')"></div>
 										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
+											<div class="card-title card-title-small"><a href="post.html">5 mẹo làm đẹp đơn giản giúp bạn trẻ trung hơn
+											</a></div>
+											<small class="post_meta"><a href="#">Katy Liu</a><span>Aug 12, 2022 at 10:20 am</span></small>
 										</div>
 									</div>
 
 									<!-- Small Card With Background -->
 									<div class="card card_default card_small_with_background grid-item">
-										<div class="card_background" style="background-image:url(images/post_16.jpg)"></div>
+										<div class="card_background" style="background-image:url('https://kenh14cdn.com/thumb_w/620/203336854389633024/2022/8/19/photo-1-16608777663571962088095.jpg')"></div>
 										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
+											<div class="card-title card-title-small"><a href="post.html">Phong cách các người đẹp khi làm diễn giả: Thùy Tiên trang nhã, Thảo Nhi Lê cá tính</a></div>
+											<small class="post_meta"><a href="#">Katy Liu</a><span>Aug 12, 2022 at 10:20 am</span></small>
 										</div>
 									</div>
 
 									<!-- Small Card With Image -->
 									<div class="card card_small_with_image grid-item">
-										<img class="card-img-top" src="images/post_14.jpg" alt="">
+										<img class="card-img-top" src="https://kenh14cdn.com/thumb_w/620/203336854389633024/2022/8/6/photo-1-1659771974250119065020.jpg" alt="">
 										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
+											<div class="card-title card-title-small"><a href="post.html">Giấm táo, "đồng minh" làm đẹp tự nhiên cho da dầu và tóc xỉn màu</a></div>
+											<small class="post_meta"><a href="#">Katy Liu</a><span>Aug 12, 2022 at 10:20 am</span></small>
 										</div>
 									</div>
 
 									<!-- Small Card Without Image -->
 									<div class="card card_default card_small_no_image grid-item">
 										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
+											<div class="card-title card-title-small"><a href="post.html">Xu hướng làm đẹp và trang điểm mùa thu 2022
+											</a></div>
+											<small class="post_meta"><a href="#">Katy Liu</a><span>Aug 12, 2022 at 10:20 am</span></small>
 										</div>
 									</div>
 
 									<!-- Small Card Without Image -->
 									<div class="card card_default card_small_no_image grid-item">
 										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
-										</div>
-									</div>
-
-									<!-- Default Card With Background -->
-									<div class="card card_default card_default_with_background grid-item">
-										<div class="card_background" style="background-image:url(images/post_12.jpg)"></div>
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a></div>
-										</div>
-									</div>
-
-									<!-- Default Card With Background -->
-									<div class="card card_default card_default_with_background grid-item">
-										<div class="card_background" style="background-image:url(images/post_6.jpg)"></div>
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a></div>
+											<div class="card-title card-title-small"><a href="post.html">Xu hướng làm đẹp mới với sản phẩm thuần chay Mela</a></div>
+											<small class="post_meta"><a href="#">Katy Liu</a><span>Aug 12, 2022 at 10:20 am</span></small>
 										</div>
 									</div>
 								</div>
@@ -709,7 +470,7 @@
 
 					</div>
 					<div class="load_more">
-						<div id="load_more" class="load_more_button text-center trans_200">Load More</div>
+						<div id="load_more" class="load_more_button text-center trans_200">Xem thêm</div>
 					</div>
 				</div>
 
@@ -723,7 +484,7 @@
 
 						<div class="sidebar_section">
 							<div class="sidebar_title_container">
-								<div class="sidebar_title">Top Stories</div>
+								<div class="sidebar_title">Nổi Bật</div>
 								<div class="sidebar_slider_nav">
 									<div class="custom_nav_container sidebar_slider_nav_container">
 										<div class="custom_prev custom_prev_top">
@@ -759,9 +520,22 @@
 											<div class="side_post">
 												<a href="post.html">
 													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="images/top_1.jpg" alt=""></div></div>
+														<div class="side_post_image"><div><img src="https://kenh14cdn.com/203336854389633024/2022/8/19/photo-1-1660908846878896059093.jpg" alt=""></div></div>
 														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<div class="side_post_title">Jisoo, Rosé diện đồ thương hiệu Việt...</div>
+															<small class="post_meta">Katy Liu<span>May 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<!-- Sidebar Post -->
+											<div class="side_post">
+												<a href="post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="side_post_image"><div><img src="data:image/jpeg;base64,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" alt=""></div></div>
+														<div class="side_post_content">
+															<div class="side_post_title">BST SAINT LAURENT XU N HÈ NAM 2023</div>
 															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
 														</div>
 													</div>
@@ -772,9 +546,9 @@
 											<div class="side_post">
 												<a href="post.html">
 													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="images/top_2.jpg" alt=""></div></div>
+														<div class="side_post_image"><div><img src="https://znews-photo.zingcdn.me/w660/Uploaded/neg_yslewlx/2018_09_22/dfdf_2.jpg" alt=""></div></div>
 														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<div class="side_post_title">Học các mỹ nhân Hollywood lên đồ đơn giản</div>
 															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
 														</div>
 													</div>
@@ -785,22 +559,9 @@
 											<div class="side_post">
 												<a href="post.html">
 													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="images/top_3.jpg" alt=""></div></div>
+														<div class="side_post_image"><div><img src="https://kenh14cdn.com/thumb_w/620/203336854389633024/2022/8/9/photo-6-1660017954494833200146.jpg" alt=""></div></div>
 														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Sidebar Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="images/top_4.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<div class="side_post_title">Nữ người mẫu nóng bỏng với loạt thành tích ''khủng''</div>
 															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
 														</div>
 													</div>
@@ -913,483 +674,6 @@
 												<a href="post.html">
 													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
 														<div class="side_post_image"><div><img src="images/top_4.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-										</div>
-
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Advertising -->
-
-						<div class="sidebar_section">
-							<div class="advertising">
-								<div class="advertising_background" style="background-image:url(images/post_17.jpg)"></div>
-								<div class="advertising_content d-flex flex-column align-items-start justify-content-end">
-									<div class="advertising_perc">-15%</div>
-									<div class="advertising_link"><a href="#">How Did van Gogh’s Turbulent Mind</a></div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Newest Videos -->
-
-						<div class="sidebar_section newest_videos">
-							<div class="sidebar_title_container">
-								<div class="sidebar_title">Newest Videos</div>
-								<div class="sidebar_slider_nav">
-									<div class="custom_nav_container sidebar_slider_nav_container">
-										<div class="custom_prev custom_prev_vid">
-											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-												 width="7px" height="12px" viewBox="0 0 7 12" enable-background="new 0 0 7 12" xml:space="preserve">
-												<polyline fill="#bebebe" points="0,5.61 5.609,0 7,0 7,1.438 2.438,6 7,10.563 7,12 5.609,12 -0.002,6.39 "/>
-											</svg>
-										</div>
-								        <ul id="custom_dots" class="custom_dots custom_dots_vid">
-											<li class="custom_dot custom_dot_vid active"><span></span></li>
-											<li class="custom_dot custom_dot_vid"><span></span></li>
-											<li class="custom_dot custom_dot_vid"><span></span></li>
-										</ul>
-										<div class="custom_next custom_next_vid">
-											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-												 width="7px" height="12px" viewBox="0 0 7 12" enable-background="new 0 0 7 12" xml:space="preserve">
-												<polyline fill="#bebebe" points="6.998,6.39 1.389,12 -0.002,12 -0.002,10.562 4.561,6 -0.002,1.438 -0.002,0 1.389,0 7,5.61 "/>
-											</svg>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="sidebar_section_content">
-
-								<!-- Sidebar Slider -->
-								<div class="sidebar_slider_container">
-									<div class="owl-carousel owl-theme sidebar_slider_vid">
-
-										<!-- Newest Videos Slider Item -->
-										<div class="owl-item">
-
-											<!-- Newest Videos Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="images/vid_1.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Newest Videos Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="images/vid_2.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Newest Videos Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="images/vid_3.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Newest Videos Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="images/vid_4.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-										</div>
-
-										<!-- Newest Videos Slider Item -->
-										<div class="owl-item">
-
-											<!-- Newest Videos Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="images/vid_1.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Newest Videos Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="images/vid_2.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Newest Videos Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="images/vid_3.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Newest Videos Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="images/vid_4.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-										</div>
-
-										<!-- Newest Videos Slider Item -->
-										<div class="owl-item">
-
-											<!-- Newest Videos Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="images/vid_1.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Newest Videos Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="images/vid_2.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Newest Videos Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="images/vid_3.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Newest Videos Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="side_post_image"><div><img src="images/vid_4.jpg" alt=""></div></div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-										</div>
-
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Advertising 2 -->
-
-						<div class="sidebar_section">
-							<div class="advertising_2">
-								<div class="advertising_background" style="background-image:url(images/post_18.jpg)"></div>
-								<div class="advertising_2_content d-flex flex-column align-items-center justify-content-center">
-									<div class="advertising_2_link"><a href="#">Turbulent <span>Mind</span></a></div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Future Events -->
-
-						<div class="sidebar_section future_events">
-							<div class="sidebar_title_container">
-								<div class="sidebar_title">Future Events</div>
-								<div class="sidebar_slider_nav">
-									<div class="custom_nav_container sidebar_slider_nav_container">
-										<div class="custom_prev custom_prev_events">
-											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-												 width="7px" height="12px" viewBox="0 0 7 12" enable-background="new 0 0 7 12" xml:space="preserve">
-												<polyline fill="#bebebe" points="0,5.61 5.609,0 7,0 7,1.438 2.438,6 7,10.563 7,12 5.609,12 -0.002,6.39 "/>
-											</svg>
-										</div>
-								        <ul id="custom_dots" class="custom_dots custom_dots_events">
-											<li class="custom_dot custom_dot_events active"><span></span></li>
-											<li class="custom_dot custom_dot_events"><span></span></li>
-											<li class="custom_dot custom_dot_events"><span></span></li>
-										</ul>
-										<div class="custom_next custom_next_events">
-											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-												 width="7px" height="12px" viewBox="0 0 7 12" enable-background="new 0 0 7 12" xml:space="preserve">
-												<polyline fill="#bebebe" points="6.998,6.39 1.389,12 -0.002,12 -0.002,10.562 4.561,6 -0.002,1.438 -0.002,0 1.389,0 7,5.61 "/>
-											</svg>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="sidebar_section_content">
-
-								<!-- Sidebar Slider -->
-								<div class="sidebar_slider_container">
-									<div class="owl-carousel owl-theme sidebar_slider_events">
-
-										<!-- Future Events Slider Item -->
-										<div class="owl-item">
-
-											<!-- Future Events Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="event_date d-flex flex-column align-items-center justify-content-center">
-															<div class="event_day">13</div>
-															<div class="event_month">apr</div>
-														</div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Future Events Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="event_date d-flex flex-column align-items-center justify-content-center">
-															<div class="event_day">27</div>
-															<div class="event_month">apr</div>
-														</div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Future Events Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="event_date d-flex flex-column align-items-center justify-content-center">
-															<div class="event_day">02</div>
-															<div class="event_month">may</div>
-														</div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Future Events Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="event_date d-flex flex-column align-items-center justify-content-center">
-															<div class="event_day">09</div>
-															<div class="event_month">may</div>
-														</div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-										</div>
-
-										<!-- Future Events Slider Item -->
-										<div class="owl-item">
-
-											<!-- Future Events Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="event_date d-flex flex-column align-items-center justify-content-center">
-															<div class="event_day">13</div>
-															<div class="event_month">apr</div>
-														</div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Future Events Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="event_date d-flex flex-column align-items-center justify-content-center">
-															<div class="event_day">27</div>
-															<div class="event_month">apr</div>
-														</div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Future Events Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="event_date d-flex flex-column align-items-center justify-content-center">
-															<div class="event_day">02</div>
-															<div class="event_month">may</div>
-														</div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Future Events Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="event_date d-flex flex-column align-items-center justify-content-center">
-															<div class="event_day">09</div>
-															<div class="event_month">may</div>
-														</div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-										</div>
-
-										<!-- Future Events Slider Item -->
-										<div class="owl-item">
-
-											<!-- Future Events Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="event_date d-flex flex-column align-items-center justify-content-center">
-															<div class="event_day">13</div>
-															<div class="event_month">apr</div>
-														</div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Future Events Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="event_date d-flex flex-column align-items-center justify-content-center">
-															<div class="event_day">27</div>
-															<div class="event_month">apr</div>
-														</div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Future Events Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="event_date d-flex flex-column align-items-center justify-content-center">
-															<div class="event_day">02</div>
-															<div class="event_month">may</div>
-														</div>
-														<div class="side_post_content">
-															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
-															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
-														</div>
-													</div>
-												</a>
-											</div>
-
-											<!-- Future Events Post -->
-											<div class="side_post">
-												<a href="post.html">
-													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
-														<div class="event_date d-flex flex-column align-items-center justify-content-center">
-															<div class="event_day">09</div>
-															<div class="event_month">may</div>
-														</div>
 														<div class="side_post_content">
 															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
 															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
@@ -1416,10 +700,10 @@
 
 	<footer class="footer">
 		<div class="container">
-			<div class="row row-lg-eq-height">
-				<div class="col-lg-9 order-lg-1 order-2">
+			<div class="">
+				<div class="">
 					<div class="footer_content">
-						<div class="footer_logo"><a href="#">avision</a></div>
+						<div class="footer_logo"><a href="#">daily fashion</a></div>
 						<div class="footer_social">
 							<ul>
 								<li class="footer_social_facebook"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -1433,23 +717,6 @@
 						<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
-					</div>
-				</div>
-				<div class="col-lg-3 order-lg-2 order-1">
-					<div class="subscribe">
-						<div class="subscribe_background"></div>
-						<div class="subscribe_content">
-							<div class="subscribe_title">Subscribe</div>
-							<form action="#">
-								<input type="email" class="sub_input" placeholder="Your Email" required="required">
-								<button class="sub_button">
-									<svg version="1.1" id="link_arrow_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-										 width="19px" height="13px" viewBox="0 0 19 13" enable-background="new 0 0 19 13" xml:space="preserve">
-										<polygon fill="#FFFFFF" points="12.475,0 11.061,0 17.081,6.021 0,6.021 0,7.021 17.038,7.021 11.06,13 12.474,13 18.974,6.5 "/>
-									</svg>
-								</button>
-							</form>
-						</div>
 					</div>
 				</div>
 			</div>
